@@ -274,7 +274,7 @@ app.get('/logout', (req, res) => {
 });
 
 // قم بتشغيل الخادم
-const port = 3000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });
